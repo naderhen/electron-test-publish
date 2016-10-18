@@ -1,0 +1,33 @@
+{
+  "name": "electron-test-publish",
+  "version": "1.0.0",
+  "description": "test description",
+  "main": "app/main.js",
+  "scripts": {
+    "start": "electron app/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://api.bintray.com/npm/naderhen/naderhen/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.4.3",
+    "electron-builder": "^7.14.1"
+  },
+  "dependencies": {
+  },
+  "build": {
+    "appId": "your.id",
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "win": {
+      "target": "nsis",
+      "publish": ["bintray"],
+      "iconUrl": "http://www.iconarchive.com/download/i85852/iconka/tailwaggers/dog-cocktail-alkohol.ico"
+    }
+  }
+}
